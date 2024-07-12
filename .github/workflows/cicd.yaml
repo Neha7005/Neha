@@ -7,7 +7,7 @@ on:
    pull_request:
        branches: ["main"] 
 
-permission:
+permissions:
     contents: read
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
 
         steps:
           - uses: actions/checkout@v3   
-          - name: Set up Python 3.11
+          - name: Set up Python 3.12
             uses: actions/checkout@v3   
             with:
-                python-version: "3.11"
+                python-version: "3.12"
